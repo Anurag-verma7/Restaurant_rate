@@ -4,23 +4,31 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form,FormControl,Button,Nav,NavDropdown,Navbar } from 'react-bootstrap';
 const Navbar1 = () =>{
   return(
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="/">hamara app</Navbar.Brand>
+    <div>
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+  <Navbar.Brand href="#home">logo</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="/about">About</Nav.Link>
-      <Nav.Link href="/contact">Contact</Nav.Link>
-      
-    </Nav>
-    <Nav>
-      <Nav.Link href="#">login</Nav.Link>
+    <Nav className="ml-auto">
+      <Nav.Link href="#deets">login</Nav.Link>
       <Nav.Link eventKey={2} href="#memes">
         signup
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
+    <Navbar collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
+  <Navbar.Brand href="/">hamara app</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="ml-auto">
+      <Nav.Link href="/about">About</Nav.Link>
+      <Nav.Link href="/contact">Contact</Nav.Link>
+      
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
+</div>
   )
 }
 export default Navbar1
