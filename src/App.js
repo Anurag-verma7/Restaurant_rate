@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer1 from './Footer';
+import Cards from './components/Card';
 class App extends Component {
 render(){
   return(
@@ -16,6 +17,7 @@ render(){
         <Route exact path="/" component={Home}/>
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
+        <Cards />
         <Footer1 />
     </div>
     </BrowserRouter>

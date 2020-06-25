@@ -5,25 +5,22 @@ import { Form,FormControl,Button,Nav,NavDropdown,Navbar } from 'react-bootstrap'
 const Navbar1 = () =>{
   return(
     <div>
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-  <Navbar.Brand href="#home">logo</Navbar.Brand>
+    <Navbar collapseOnSelect expand="lg" bg="dark" fixed="top" variant="dark">
+    <Navbar.Brand href="#home">
+      <img
+        alt=""
+        src="/logo.svg"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+      />{' '}
+      Khaana Khazaana
+    </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto">
-      <Nav.Link href="#deets">login</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        signup
-      </Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>
-    <Navbar collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
-  <Navbar.Brand href="/">hamara app</Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="ml-auto">
-      <Nav.Link href="/about">About</Nav.Link>
-      <Nav.Link href="/contact">Contact</Nav.Link>
+      <Nav.Link href="/about">Login</Nav.Link>
+      <Nav.Link href="/contact">Signup</Nav.Link>
       
     </Nav>
   </Navbar.Collapse>
