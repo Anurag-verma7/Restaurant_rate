@@ -1,0 +1,13 @@
+.one{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: coral;
+    color: white;
+}
+.badge{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    color: coral;
+}
