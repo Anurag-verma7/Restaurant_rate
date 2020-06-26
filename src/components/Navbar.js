@@ -1,11 +1,10 @@
 import React from 'react';
-import {Link,NavLink} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form,FormControl,Button,Nav,NavDropdown,Navbar } from 'react-bootstrap';
 const Navbar1 = () =>{
   return(
-    <div>
-    <Navbar collapseOnSelect expand="lg" bg="dark" fixed="top" variant="dark">
+    <div className="shadow-box-example hoverable z-depth-5" style={{height: "50px", width: "100%", backgroundColor: "#64b5f6"}}>
+    <Navbar collapseOnSelect expand="lg" bg="dark" fixed="top" variant="dark" >
     <Navbar.Brand href="#home">
       <img
         alt=""

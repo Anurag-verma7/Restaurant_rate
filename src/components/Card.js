@@ -2,49 +2,36 @@ import React from 'react';
 import {Link,NavLink} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import CardDeck from 'react-bootstrap/CardDeck'
+import CardDeck from 'react-bootstrap/CardDeck';
+import Badge from 'react-bootstrap/Badge';
 const Cards = () =>{
     return(
 <CardDeck>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Most searched</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+        Bangalore
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
   </Card>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Use coupon code <Badge variant="secondary">CSPPL</Badge> </Card.Title>
       <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+        To get 50% off in Oven Story
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
   </Card>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Total Views</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
+        <h2>2</h2>
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
   </Card>
 </CardDeck>
     )
