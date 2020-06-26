@@ -4,10 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Badge from 'react-bootstrap/Badge';
+import './Card.css'
 const Cards = () =>{
     return(
 <CardDeck>
-  <Card>
+  <Card className="one">
     
     <Card.Body>
       <Card.Title>Most searched</Card.Title>
@@ -16,16 +17,16 @@ const Cards = () =>{
       </Card.Text>
     </Card.Body>
   </Card>
-  <Card>
+  <Card className="one">
     
     <Card.Body>
-      <Card.Title>Use coupon code <Badge variant="secondary">CSPPL</Badge> </Card.Title>
+      <Card.Title>Use coupon code<Badge className="badge" variant="light">CSPPL</Badge> </Card.Title>
       <Card.Text>
         To get 50% off in Oven Story
       </Card.Text>
     </Card.Body>
   </Card>
-  <Card>
+  <Card className="one">
     <Card.Body>
       <Card.Title>Total Views</Card.Title>
       <Card.Text>

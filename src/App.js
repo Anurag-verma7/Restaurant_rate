@@ -6,18 +6,18 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer1 from './Footer';
+import Footer1 from './components/Footer';
 import Cards from './components/Card';
+import Search1 from './components/Search';
 class App extends Component {
 render(){
   return(
     <BrowserRouter>
     <div className="App">
         <Navbar1 />
-        <Route exact path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/contact" component={Contact}/>
+        <Home/>
         <Cards />
+        <Search1/>
         <Footer1 />
     </div>
     </BrowserRouter>

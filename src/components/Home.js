@@ -1,9 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Jumbotron,Container,Button} from 'react-bootstrap'
 import Carousel from 'react-bootstrap/Carousel'
-import junko from '../junk-food.png'
-import pastaa from '../pasta.png'
+import junko from '../junk-food.jpg'
+import pastaa from '../pasta.jpg'
+import sweet from '../sweets.jpg'
 const Home = () =>{
     return(
 
@@ -28,7 +28,7 @@ const Home = () =>{
   <Carousel.Item>
     <img
       className="h-100 w-100"
-      src={junko}
+      src={sweet}
       alt="Third slide"
     />
 
