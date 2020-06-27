@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import Navbar1 from './components/Navbar'
 import { BrowserRouter } from 'react-router-dom'
@@ -9,15 +10,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer1 from './components/Footer';
 import Cards from './components/Card';
 import Search1 from './components/Search';
+import Restaurant from './components/restaurant'
 class App extends Component {
 render(){
   return(
     <BrowserRouter>
     <div className="App">
         <Navbar1 />
-        <Home/>
-        <Cards />
-        <Search1/>
+        <Route exact path ="/" component={Home} />
+        <Route path ="/restaurant" component={Restaurant} />
         <Footer1 />
     </div>
     </BrowserRouter>

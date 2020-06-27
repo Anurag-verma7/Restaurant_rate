@@ -1,11 +1,12 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form,FormControl,Button,Nav,NavDropdown,Navbar } from 'react-bootstrap';
 const Navbar1 = () =>{
   return(
     <div className="shadow-box-example hoverable z-depth-5" style={{height: "50px", width: "100%", backgroundColor: "#64b5f6"}}>
     <Navbar collapseOnSelect expand="lg" bg="dark" fixed="top" variant="dark" >
-    <Navbar.Brand href="#home">
+    <Navbar.Brand ><Link to="/">
       <img
         alt=""
         src="/logo.svg"
@@ -14,12 +15,13 @@ const Navbar1 = () =>{
         className="d-inline-block align-top"
       />{' '}
       Khaana Khazaana
+      </Link>
     </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto">
-      <Nav.Link href="/about">Login</Nav.Link>
-      <Nav.Link href="/contact">Signup</Nav.Link>
+      <Nav.Link href="#">Login</Nav.Link>
+      <Nav.Link href="#">Signup</Nav.Link>
       
     </Nav>
   </Navbar.Collapse>
