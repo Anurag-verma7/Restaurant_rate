@@ -6,7 +6,8 @@ const Navbar1 = () =>{
   return(
     <div className="shadow-box-example hoverable z-depth-5" style={{height: "50px", width: "100%", backgroundColor: "#64b5f6"}}>
     <Navbar collapseOnSelect expand="lg" bg="dark" fixed="top" variant="dark" >
-    <Navbar.Brand ><Link to="/">
+    <Link to="/">
+      <Navbar.Brand >
       <img
         alt=""
         src="/logo.svg"
@@ -15,8 +16,9 @@ const Navbar1 = () =>{
         className="d-inline-block align-top"
       />{' '}
       Khaana Khazaana
-      </Link>
+      
     </Navbar.Brand>
+    </Link>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto">

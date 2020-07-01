@@ -49,7 +49,7 @@ const Home = () =>{
    placeholder="search location"
  />
  <InputGroup.Append>
-   <Button variant="outline-orange" className="search"><Link to ="/restaurant">search</Link></Button>
+ <Link to ="/restaurant"><Button variant="outline-orange" className="search">search</Button></Link>
   
  </InputGroup.Append>
 </InputGroup>
