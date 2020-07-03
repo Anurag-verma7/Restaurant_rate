@@ -12,16 +12,20 @@ import Cards from './components/Card';
 import Search1 from './components/Search';
 import Restaurant from './components/restaurant'
 import Reg from './components/Signup'
+import './App.css'
 class App extends Component {
 render(){
   return(
     <BrowserRouter>
-    <div className="App">
+    <div className="page-container">
+    <div className="content-wrap">
         <Navbar1 />
         <Route exact path ="/" component={Home} />
         <Route path ="/restaurant" component={Restaurant} />
         <Route path ="/Signup" component={Reg} />
-        <Footer1 />
+        
+    </div>
+    <Footer1 />
     </div>
     </BrowserRouter>
   );
