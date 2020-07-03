@@ -1,0 +1,13 @@
+.reg{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 22px 0 rgb(126, 126, 126);
+}
+
+.regbt{
+    align-self: center;
+    background-color: coral;
+    color: white;
+}

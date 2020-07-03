@@ -4,14 +4,14 @@ import insta from '../instagram-sketched.svg';
 import linkendin from '../linkedin.svg';
 import git from '../github-image.svg';
 import fb from '../facebook.svg';
+import "./Footer.css"
 const Footer1 = () =>{
     return(
        
-  <Jumbotron fluid>
-  <Container>
+  <Jumbotron fluid className="foot" >
   <Row>
     <Col xs={6} className="text-center"><h3><strong>Team</strong></h3>
-      <p>Anurag</p><p>Aneesha</p><p>Dishant</p><p>Rishita</p></Col>
+      <h5>Anurag</h5><h5>Aneesha</h5><h5>Dishant</h5><h5>Rishita</h5></Col>
     <Col xs={6} className="text-center"><h3><strong>Connect us</strong></h3><img 
       className="h-100 mw-150 ml-2"
       width={40}
@@ -46,7 +46,6 @@ const Footer1 = () =>{
     />
     </Col>
     </Row>
-  </Container>
 </Jumbotron>
        
     )
