@@ -1,7 +1,8 @@
-import React,{useState ,useEffect} from 'react';
+import React,{useState} from 'react';
 import {Link} from 'react-router-dom'
+import './Signup'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form,FormControl,Button,Nav,NavDropdown,Navbar,Modal } from 'react-bootstrap';
+import { Form,FormControl,Button,Nav,NavDropdown,Navbar,Row,Col,Modal } from 'react-bootstrap';
 const Navbar1 = () =>{
   const [show, setShow] = useState(false);
 
@@ -26,50 +27,54 @@ const Navbar1 = () =>{
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto">
-      <Nav.Link href="#">Login</Nav.Link>
-      <Nav.Link href="#" onClick={handleShow}>Signup</Nav.Link>
+      <Nav.Link href="#" onClick={handleShow}>Login</Nav.Link>
+      <Nav.Link href="./Signup">Signup</Nav.Link>
       
     </Nav>
   </Navbar.Collapse>
 </Navbar>
-<Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
 
-      <Modal show={show} onHide={handleClose}>
+<Modal show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+        centered>
         <Modal.Header closeButton>
-          <Modal.Title>signup</Modal.Title>
+          <Modal.Title>Login</Modal.Title>
         </Modal.Header>
-        <Modal.Body>yaha signup kare!!!!!</Modal.Body>
+        <Modal.Body>
+        <Form>
+  <Form.Group as={Row}>
+    <Form.Label column sm="2">
+      Email:
+    </Form.Label>
+    <Col sm="10">
+    <Form.Control type="text" placeholder="username@gmail.com" />
+    </Col>
+  </Form.Group>
+
+  <Form.Group as={Row} >
+    <Form.Label column sm="2">
+      Password:
+    </Form.Label>
+    <Col sm="10">
+      <Form.Control type="password" placeholder="Password" />
+    </Col>
+  </Form.Group>
+</Form>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Login
           </Button>
+          <Link to="/Signup">
           <Button variant="primary" onClick={handleClose}>
-            signup
+            Register
           </Button>
+          </Link>
         </Modal.Footer>
       </Modal>
 </div>
   )
 }
 export default Navbar1
-/*
-const Navbar = () =>{
-    return(
-        <nav className="nav-wrapper red-darken-3">
-            <div className="container">
-                <a className="brand-logo">restaurant_rate</a>
-                <ul className="right">
-                    <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/about">About</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
-                </ul>
-            </div>
-        </nav>
-
-    )
-}
-export default Navbar
-*/
-

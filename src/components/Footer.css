@@ -1,0 +1,10 @@
+.foot{
+    margin-top: 70px;
+    padding-top: 3em;
+    bottom: 0;
+    width: 100%;
+    background-color: coral;
+    color: white;
+    position: relative;
+
+}

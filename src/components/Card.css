@@ -11,3 +11,8 @@
     margin-left: 1em;
     color: coral;
 }
+.one:hover{
+    box-shadow: 0 0 12px 0 coral;
+    background-color: white;
+    color: coral;
+}
